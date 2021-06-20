@@ -10,7 +10,7 @@ let search = ()=>{
     if(srarchName.length>=3){
         sugg.innerText = `Searching For "${srarchName}". . .`;
         //Api work Here
-        var api = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=`+srarchName;
+        var api = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${key}&q=`+srarchName;
         
         fetch(api)
         .then(responce => {

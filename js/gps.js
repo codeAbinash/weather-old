@@ -67,9 +67,9 @@ const setCords = (long,lat)=> {
     cords.innerText = `[${Math.abs(long)}°${longTxt} , ${Math.abs(lat)}°${latTxt}]`;
 }
 const showResult = (long,lat)=>{
-    //var api = `http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${key}&q=${long}%2c${lat}`;
-    //var api = `http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${key}&q=28.6139%2c77.2090`;
-    var api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key2}`;
+    //var api = `https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${key}&q=${long}%2c${lat}`;
+    //var api = `https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${key}&q=28.6139%2c77.2090`;
+    var api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key2}`;
     fetch(api)
         .then(responce => {
             return responce.json();
