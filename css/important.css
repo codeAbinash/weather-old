@@ -1,0 +1,22 @@
+@font-face {
+    font-family: R;
+    src: url("../font/Comfortaa-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:R;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    transition:0.1s linear opacity,0.3s linear transform;
+}
+:root{
+    --color:#F50057;
+}
+.main{
+    height: 100vh;
+}

@@ -1,0 +1,248 @@
+.main{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    /* background-color: cornsilk; */
+}
+header .options{
+    padding:10px;
+    flex-direction: column;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+header .options .option{
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    padding: 10px 20px 10px 10px;
+    box-shadow: 0 0 10px 0 #00000017;
+    margin: 10px;
+    color: #444;
+}
+header .options .option img{
+    margin-right: 10px;
+    height: 1.8em;
+}
+header .moreOptions{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+}
+header .name{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.3em;
+    background-color: white;
+    /* color: var(--color); */
+}
+header .temperature{
+    font-size: 7em;
+    margin: 10px 0 10px 0;
+    font-weight: normal;
+    color:#333;
+    /* color: var(--color); */
+}
+header .temperature sup{
+    font-size: 0.3em;
+}
+header .status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 10px 0 #00000055; */
+    width: auto;
+}
+header .status div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 15px ;
+    box-shadow: 0 0 10px 0 #00000015;
+    border-radius: 100px;
+}
+header .status img{
+    height: 1.8em;
+    margin-right:10px;
+}
+header .status span{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+.conditions{
+    width: 100%;
+    height: auto;
+    padding: 15px 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #444;
+}
+.conditions .condition{
+    font-weight: bold;
+    font-size: 0.65em;
+    box-shadow: 1px 1px 10px #00000015;
+    padding: 10px 15px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 5px;
+    letter-spacing: 0.5px;
+}
+.conditions .condition img{
+    width: 2em;
+    margin-right: 5px;
+}
+.weatherContainer{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+.weatherContainer::-webkit-scrollbar,.weatherContainer .weathers::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.weatherContainer .weathers{
+    width: auto ;
+    overflow: scroll;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+.weathers .weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:15px 17px;
+    border-radius: 10px;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+.weathers .weather .time{
+    font-weight: bold;
+    font-size: 0.7em;
+    padding: 3px;
+}
+.weathers .weather .temp{
+    font-weight: bold;
+    font-size: 0.7em;
+}
+.weathers .weather .wind{
+    font-weight: bold;
+    font-size: 0.6em;
+    padding-top: 3px;
+}
+.weathers .weather img{
+    width: 30px;
+    margin: 3px 0;
+}
+
+.landscape{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    /* margin-top: 0px; */
+}
+.landscape .imageDiv{
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+    /* background-image:url("../image/stars1.gif"); */
+    background-size: 100px 100px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    /* transition: 5s ease-in-out background; */
+}
+.landscape img.mountains{
+    width: 100%;
+    height: auto;
+    /* filter: brightness(0.3); */
+    z-index: 100;
+    transition: 5s ease-in-out filter;
+}
+.landscape .left, .landscape .right{
+    width:4%;
+    height:100px;
+    z-index: 100;
+    background-color: white;
+}
+.landscape .sun{
+    position: absolute;
+    height:40px;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    left: 0%;
+    filter: drop-shadow(0 0 10px yellow);
+    z-index: 99;
+    transition:5s ease-in-out left;
+}
+.riseSet{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 4%;
+}
+.riseSet span{
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #444;
+}
+.mainImg{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.fiveDay{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-top: 0;
+    color: #333;
+}
+.fiveDay .day{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 16px 0;
+}
+.fiveDay .day .left{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.fiveDay .day .left img{
+    height: 2em;
+    margin-right: 10px;
+}
+.by{
+    padding: 50px;
+}

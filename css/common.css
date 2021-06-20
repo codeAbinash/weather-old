@@ -1,0 +1,54 @@
+.center{
+    text-align: center;
+}
+.txt12{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.gray{
+    color: #464646;
+}
+.press,.pressB{
+    transition: 0.1s ease-in transform;
+}
+.press:active{
+    transform: scale(0.95);
+}
+.pressB:active{
+    transform: scale(0.98);
+}
+a{
+    color:dodgerblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.color{
+    color:var(--color);
+}
+.mainButton{
+    width: 100%;
+    background-color: var(--color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding:19px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.by{
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.by p{
+    margin:0 540px;
+}
+.bottom{
+    width: 100%;
+    height: auto;
+}

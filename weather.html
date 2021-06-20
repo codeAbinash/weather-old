@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/important.css">
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <div class="options">
+                <div class="option press" onclick="$d.openPage('location.html','right')">
+                    <img src="icon/location.svg">
+                    Change Location
+                </div>
+                <div class="option press unit" onclick="changeUnit()"> 
+                    <img src="icon/thermometer.svg">
+                    <span></span>
+                </div>
+            </div>
+            <p class="name center">City Name</p>
+            <img onclick="switchMore()" src="icon/moew.svg" class="moreOptions press">
+            <div class="conditions">
+                <div class="condition press feels">
+                    <img src="icon/thermometer.svg">
+                    <span></span>
+                </div>
+                <div class="condition press pressure">
+                    <img src="icon/meter.svg">
+                    <span></span>
+                </div>
+                <div class="condition press wind">
+                    <img src="icon/arrow.svg">
+                    <span></span>
+                </div>
+                <div class="condition press cloud">
+                    <img src="icon/rain.png" style="filter: brightness(0.3);">
+                    <span></span>
+                </div>
+                <div class="condition press hum">
+                    <img src="icon/drop.svg">
+                    <span></span>
+                </div>
+
+            </div>
+            <h1 class="temperature center"></h1>
+            <div class="status center">
+                <div class="press">
+                    <img src="icon/weather/01n.png" alt="">
+                    <span>Weather Condition</span>                    
+                </div>
+            </div>
+            <div class="weatherContainer">
+                <div class="weathers">
+                </div>
+            </div>
+        </header>
+        <div class="landscape">
+            <div class="left"></div>
+            <div class="imageDiv">
+                <img src="image/day.png" class="mountains">
+            </div>
+            <img class="sun" src="icon/sun.png">
+            <div class="right"></div>
+        </div>
+        <div class="riseSet">
+            <span class="rise"></span>
+            <span class="set"></span>
+        </div>
+        <div class="conditions">
+            <div class="condition press dew">
+                <img src="icon/point.svg">
+                <span></span>
+            </div>
+            <div class="condition press uvi">
+                <img src="icon/sunic.svg">
+                <span></span>
+            </div>
+            <div class="condition press vis">
+                <img src="icon/visibility.svg">
+                <span></span>
+            </div>
+            <div class="condition press time" onclick="location.reload()">
+                <img src="icon/clock.svg">
+                <span></span>
+            </div>
+        </div>
+
+
+        <img class="mainImg press">
+        <h3 class="center" style="margin-top: 60px;color: var(--color);">7 Days Forcast</h3>
+        <div class="fiveDay">
+
+        </div>
+
+        <div class="bottom" style="margin-top: 40px;">
+            <p class="center by">By <a href="https://www.facebook.com/Abinash.Dark.Rose/">Abinash Karmakar | Dark Rose Software</a>
+            <br><br>
+            All Datas are collected from <a href="https://www.accuweather.com/">accuweather.com </a>
+                & <a href="https://openweathermap.org/">openweathermap.org </a>.
+            </p>
+        </div>
+    </div>
+    <script src="js/important.js"></script>
+<script src="js/common.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>

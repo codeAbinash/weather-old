@@ -1,0 +1,99 @@
+.main{
+    padding:0 0 30px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main .pin{
+    position: absolute;
+    top: 50vw;
+    left:50vw;
+    font-weight: bold;
+    font-size: 0.7em;
+    background-color: white;
+    padding: 5px 10px 3px 10px;
+    border-radius: 4px;
+    transform: translateY(-100%) translateX(-50%);
+    box-shadow: 0px 5px 10px 1px #00000070;
+    transition: 1s ease-in-out;
+    /* transition-delay: 1s; */
+}
+.main .pin::before{
+    content: "";
+    height: 0;
+    width: 0;
+    border: 8px solid white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-top-color:transparent ;
+    border-left-color:transparent ;
+    border-bottom-color:transparent ;
+    transform: translateX(-50%) translateY(-10%) rotate(-90deg);
+}
+
+.main img{
+    width: 80%;
+    height: auto; 
+    margin: 0 auto;
+    display: block;
+    /* height: 100vh; */
+}
+.tracking{
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(18, 216, 18);
+    padding: 10px 20px;
+
+}
+
+.results{
+    display: none;
+    width: 100%;
+    height: auto;
+    width: calc(100% - 60px);
+}
+.result{
+    width: 100%;
+    height: auto;
+    background-color: var(--color);
+
+    border-radius: 10px;
+    padding: 25px;
+}
+.result .name{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 13px;
+    /* text-transform: ; */
+    letter-spacing: 0.5px;
+}
+.result .details{
+    font-weight: bold;
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+#cords{
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    /* margin-top: -100px; */
+    display: none;
+    position: fixed;
+    top: 20px;
+}
+.main .world{
+    width: 100%;
+}
+.main .mainButton{
+    width: calc(100% - 60px);
+    margin-bottom: 0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/important.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/location.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="setLocation">Set Location</h1>
+        <!-- <button class="press"><span><img style="height: 1em;" src="icon/gps.svg"> </span>  Use GPS to Locate</button> -->
+        <input id="searchTxt" type="search" placeholder="Search Your City Name">
+        <button id="searchButton" class="pressB mainButton" onclick="search()">Search</button>
+
+
+        <p class="status" id="sugg"></p>
+        <div class="results" id="results">
+            
+        </div>
+
+        <div class="none" id="none">
+            <img src="icon/searchNotFound.svg" alt="">
+            <p>No Result Found</p>
+        </div>
+        <div class="liteButton press" onclick="setData('Bankura',23.2313,87.0784)">Continue As Bankura</div>
+        <div class="floating press" onclick="$d.openPage('gps.html','right')">
+            <img src="icon/gps.svg"> <p> Use GPS</p>
+        </div>
+        <div class="last"></div>
+    </div>
+<script src="js/important.js"></script>
+<script src="js/common.js"></script>
+<script src="js/location.js"></script>
+</body>
+</html>

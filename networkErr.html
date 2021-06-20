@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Err</title>
+    <link rel="stylesheet" href="css/important.css">
+    <link rel="stylesheet" href="css/common.css">
+<style>
+@font-face {
+    font-family: weather;
+    src: url("font/TradeWinds-Regular.ttf");
+}
+.main{
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.main img{
+    display: block;
+    width: 95%;
+    margin:0 auto;
+}
+.main .mainTxt{
+    font-family: weather;
+    color: var(--color);
+    text-align: center;
+}
+.main .para{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    /* color: #666; */
+    color: var(--color);
+    font-family: weather;
+}
+.solution{
+    /* border: 1px solid var(--color); */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.main .para2{
+    font-size: 0.85em;
+    /* text-align: center; */
+    font-weight: bold;
+    /* color: #666; */
+    color: #555;
+    padding: 6px;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="mainTxt">OFFLINE</h1>
+        <img src="icon/offline.svg" alt="You Are Offline">
+        <p class="para">You Are Offline!</p>
+        <div class="solution">
+            <p class="para2">1. Check Your Internet Connection</p>
+            <p class="para2">2. Turn Off Airplane Mode</p>
+            <p class="para2">2. Turn On Mobile data or Wi-Fi</p>
+        </div>
+        <div class="bottom">
+            <button class="pressB mainButton continue" onclick="$d.openPage('back','none')">Try Again</button>
+            <!-- <p class="center by">By <a href="">Abinash Karmakar | Dark Rose Software</a></p> -->
+        </div>
+    </div>
+<script>
+let checkOffline = ()=>{
+    if(navigator.onLine){
+        $d.openPage("back",'none');
+    }
+    setTimeout(() => {checkOffline();}, 500);
+}
+checkOffline();
+</script>
+<script src="js/important.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
