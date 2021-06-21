@@ -14,9 +14,7 @@ const switchMore = ()=>{
     //document.querySelector(".main .options").style.height="0px";
     switchMoreVar*=-1;
 };
-
 //const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key2}`;
-
 window.addEventListener("load", ()=>{
     var name = localStorage.weatherName;
     var lon = localStorage.weatherLon;
@@ -36,11 +34,6 @@ window.addEventListener("load", ()=>{
            });
     else
         loadWeatherData();
-    // var data = JSON.parse(localStorage.weatherData);
-    // console.log(data);
-
-    // loadWeatherData();
-
 });
 
 const loadWeatherData = ()=>{

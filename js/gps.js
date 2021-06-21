@@ -6,9 +6,7 @@ var results = document.querySelector(".results");
 let long,lat;
 window.addEventListener('load', ()=>{track();});
 button.addEventListener("click", ()=>{track();});
-
 const track = ()=> {
-
     if(navigator.geolocation){
         status.style.display="block";
         navigator.geolocation.getCurrentPosition(

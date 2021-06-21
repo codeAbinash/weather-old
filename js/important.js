@@ -50,6 +50,8 @@ const setData = (a,b,c)=>{
     localStorage.weatherLat = c;
     $d.openPage("weather.html","right");
     localStorage.weatherLoggedIn="yes";
+    alert(b);
+    alert(c);
     //alert("Done");
     //alert(localStorage.weatherLon,localStorage.weatherLat);
 }
