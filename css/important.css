@@ -15,7 +15,7 @@ body{
     transition:0.1s linear opacity,0.3s linear transform;
 }
 :root{
-    --color:#F50057;
+    --color:#536DFE;
 }
 .main{
     height: 100vh;
