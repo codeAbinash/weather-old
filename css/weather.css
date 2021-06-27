@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 *{
     box-sizing: border-box;
@@ -163,6 +164,7 @@ header .status span{
     display: flex;
     margin: auto;
     /* margin-top: 0px; */
+    overflow: hidden;
 }
 .landscape .imageDiv{
     width: 100%;
@@ -190,10 +192,10 @@ header .status span{
 }
 .landscape .sun{
     position: absolute;
-    height:40px;
+    width:5%;
     transform: translateX(-50%);
     margin-top: 10px;
-    left: 0%;
+    left: 100%;
     filter: drop-shadow(0 0 10px yellow);
     z-index: 99;
     transition:5s ease-in-out left;
