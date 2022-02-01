@@ -1,3 +1,3 @@
 # Frontend Weather application
 # Weather API
-# Open [Weather](https://darkroseabinash.github.io/Weather/)
+# Open [Weather](https://codeAbinash.github.io/Weather/)
